@@ -1,17 +1,15 @@
-#include <stdio.h>
-
-int add(float fn, float sn){
+float add(float fn, float sn){
     return fn + sn;
 }
 
-int sub(float fn, float sn){
+float sub(float fn, float sn){
     return fn - sn;
 }
 
-int mul(float fn, float sn){
+float mul(float fn, float sn){
     return fn * sn;
 }
 
-int div(float fn, float sn){
+float div(float fn, float sn){
     return fn / sn;
 }

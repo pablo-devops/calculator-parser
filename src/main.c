@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "calc.h"
+#include "parser.h"
 
 int main(){
     float first_number;
@@ -11,7 +12,7 @@ int main(){
     printf("Type second number: \n");
     scanf("%f", &second_number);
     printf("Choose, which operation do you want to use: \n");
-    printf("1. Add\n 2. Sub\n 3. Mul\n 4. Div\n");
+    printf("1. Add\n2. Sub\n3. Mul\n4. Div\n5. Parser\n");
     scanf("%d", &choose);
     switch (choose)
     {
@@ -35,6 +36,10 @@ int main(){
             result = div(first_number, second_number);
             printf("Your division result is: %.2f", result);
         }
+        break;
+    case 5:
+        result = parser();
+        printf("%.2f", result);
         break;
     default:
         break;
